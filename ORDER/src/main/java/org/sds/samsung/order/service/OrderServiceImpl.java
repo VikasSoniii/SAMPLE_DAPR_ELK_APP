@@ -27,7 +27,7 @@ public class OrderServiceImpl {
         headers.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<OrderDTO> requestEntity = new HttpEntity<>(orderDTO, headers);
 
-        ResponseEntity<String> message = restTemplate.postForEntity("http://10.233.56.101:8082/payment", requestEntity, String.class);
+        ResponseEntity<String> message = restTemplate.postForEntity("http://order-demo.ns-vikas:8082/payment", requestEntity, String.class);
         logger.info("ends: Received response from payment-service: {}", message);
         return message;
     }
