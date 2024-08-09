@@ -1,0 +1,10 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: payment-service
+
+logging:
+  file:
+    name: C:/elk_logs/elk-stack.log

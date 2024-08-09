@@ -1,0 +1,10 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: order-service
+
+logging:
+  file:
+    name: C:/elk_logs/elk-stack.log
